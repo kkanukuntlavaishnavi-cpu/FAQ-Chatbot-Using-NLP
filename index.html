@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+<body style="font-family:Arial;text-align:center;">
+<h2>FAQ Chatbot</h2>
+
+<input id="q" placeholder="Ask a question">
+<button onclick="reply()">Send</button>
+
+<p id="ans"></p>
+
+<script>
+function reply(){
+
+let q=document.getElementById("q").value.toLowerCase();
+let a="Sorry, I don't know the answer.";
+
+if(q=="what is ai")
+a="Artificial Intelligence is the simulation of human intelligence.";
+
+else if(q=="what is python")
+a="Python is a programming language.";
+
+else if(q=="what is nlp")
+a="Natural Language Processing helps computers understand language.";
+
+document.getElementById("ans").innerHTML=a;
+}
+</script>
+
+</body>
+</html>
